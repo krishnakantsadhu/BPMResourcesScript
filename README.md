@@ -21,6 +21,6 @@ $ git remote add origin <<remote repository URL>>
 $ git remote -v
 # Verifies the new remote URL
 
-$ git push origin master
+$ git push -u origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 ```

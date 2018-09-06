@@ -1,0 +1,1159 @@
+***********************************************
+* Queue creation  FES.ECRM.UPDFES.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('FES.ECRM.UPDFES.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - Feasibility integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  FES.ECRM.OPPT.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('FES.ECRM.OPPT.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - Feasibility integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  HPSM.ECRM.TKT.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('HPSM.ECRM.TKT.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  HPSM.ECRM.TKT.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('HPSM.ECRM.TKT.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ECRM.HPSM.TKT.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('ECRM.HPSM.TKT.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ECRM.HPSM.TKT.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('ECRM.HPSM.TKT.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  HPSM.ECRM.TKT.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('HPSM.ECRM.TKT.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  HPSM.ECRM.TKT.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('HPSM.ECRM.TKT.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ECRM.HPSM.TKT.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('ECRM.HPSM.TKT.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ECRM.HPSM.TKT.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('ECRM.HPSM.TKT.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  HPSM.ECRM.TKT.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('HPSM.ECRM.TKT.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  HPSM.ECRM.TKT.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('HPSM.ECRM.TKT.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ECRM.HPSM.TKT.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('ECRM.HPSM.TKT.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ECRM.HPSM.TKT.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('ECRM.HPSM.TKT.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - HPSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  NMS.ECRM.NOREV.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('NMS.ECRM.NOREV.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - M6 MNS integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  OSM.ECRM.ORDER.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('OSM.ECRM.ORDER.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - OSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  OSM.ECRM.ORDER.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('OSM.ECRM.ORDER.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - OSM integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ESS.ECRM.SR.ESB.RQO.02
+*********************************************** 
+DEFINE QLOCAL ('ESS.ECRM.SR.ESB.RQO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - ESS integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  ECRM.ESS.SR.ESB.RPQ.02
+*********************************************** 
+DEFINE QLOCAL ('ECRM.ESS.SR.ESB.RPQ.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM - ESS integration') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('ENTCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+

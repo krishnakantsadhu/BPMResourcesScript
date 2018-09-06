@@ -1,0 +1,38 @@
+puts "#----------------------------------- Creating $name$ ------------------------------------------------"
+set jmsProvider [$AdminConfig getid "/$scope$/$jmsProvider$/"]
+set template [lindex [$AdminConfig listTemplates MQQueue] 0]
+set name [list name "$name$"]
+set jndi [list jndiName "$jndiName$"]
+set queueName [list baseQueueName "$queueName$"]
+set mqAttrs [list $name $jndi $queueName]
+set queue [ $AdminConfig createUsingTemplate MQQueue $jmsProvider $mqAttrs $template ]
+$AdminConfig required J2EEResourceProperty
+set newPropSet  [ $AdminConfig create J2EEResourcePropertySet $queue {} ]
+set propSet [$AdminConfig showAttribute $queue  propertySet]
+# ------------------------- MDWRITE ---------------------------------------
+set name                     [ list name "MDWRITE"]
+set required                 [ list required false]
+set description              [ list description ""]
+set value                    [ list value "YES"]
+set rpAttrs [list $name  $value $description $required] 
+$AdminConfig create J2EEResourceProperty $propSet $rpAttrs
+# ------------------------- MDREAD ----------------------------------------
+set name                     [ list name "MDREAD"]
+set required                 [ list required false]
+set description              [ list description ""]
+set value                    [ list value "YES"]
+set rpAttrs [list $name  $value $description $required] 
+$AdminConfig create J2EEResourceProperty $propSet $rpAttrs
+# ------------------------- MSGBODY ---------------------------------------
+set name                     [ list name "MSGBODY"]
+set required                 [ list required false]
+set description              [ list description ""]
+set value                    [ list value "MQ"]
+set rpAttrs [list $name  $value $description $required] 
+$AdminConfig create J2EEResourceProperty $propSet $rpAttrs
+
+# ==========================================================================================================================
+
+$atLastLine$puts "#-----------------------------------Saving the configuration --------------------------------------"
+$atLastLine$$AdminConfig save
+$atLastLine$puts "#-----------------------------------Ending Script------------------------------------------------"

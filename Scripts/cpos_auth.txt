@@ -1,0 +1,60 @@
+setmqaut -m QMEIGS1 -n 	SDP.WEBCRM.TXTVW.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.MUM.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.GUJ.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.ROTN.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.DEL.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.ORS.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.UPE.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.MPC.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.TXTVW.DISHA.ESB.RPO.01 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.REF.MUM.ESB.RPO.02 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.REF.GUJ.ESB.RPO.02 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.REF.ROTN.ESB.RPO.02 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.REF.DEL.ESB.RPO.02 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.REF.ORS.ESB.RPO.02 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.REF.UPE.ESB.RPO.02 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n 	SDP.CRM.REF.MPC.ESB.RPO.02 -t q -p IOMkrish +get +inq  +setall
+setmqaut -m QMEIGS1 -n SDP.CRM.REF.DISHA.ESB.RPO.02  -t q -p IOMkrish +get +inq  +setall
+
+
+
+mqsisetdbparms BREIBS1 -n jms::mslv/oms/oms1/internal/jms/ConnectionFactory -u osmadmin -p osmadmin
+
+
+
+setmqaut -m QMEIGS1 -n CRM.SDP.TXTVW.ESB.RQI.01 -t q  -p IOMkrish +put +inq +setall
+setmqaut -m QMEIGS1 -n CRM.SDP.REF.ESB.RQI.02 -t q  -p IOMkrish +put +inq +setall
+setmqaut -m QMEIGS1 -n WEBCRM.SDP.TXTVW.ESB.RQI.01 -t q  -p IOMkrish +put +inq +setall
+
+
+M6
+
+UDP_archive_queue   ECRM.COMMON.ARC.02
+UDP_numberReservationM6_rpo  NMS.ECRM.NOREV.ESB.RPO.02
+
+
+ESS
+UDP_sr_create_rpo  CRMTOESSTT
+UDP_tod_bod_rpo CRMTOESSTODBOD
+
+NMS
+UDP_numerReservation_NMS_rpo  NMS.ECRM.NOREV.ESB.RPO.02
+
+
+
+HPSM
+UDP_CRM_TO_HPSM_rpo  NMS.ECRM.NOREV.ESB.RPO.02
+UDP_HPSM_TO_CRM_rpo HPSM.ECRM.TKT.ESB.RPO.02
+
+
+OSM
+UDP_order_create_rpo   OSM.ECRM.ORDER.ESB.RPO.02
+
+
+
+SET OutputExceptionList = InputExceptionList;
+
+
+
+
+

@@ -1,0 +1,52 @@
+###################################### Run script ##################################################
+## wsadmin.sh -lang jacl -user <<user_name>> -password <<password>> -f <<path of script file>>  ##
+####################################################################################################
+
+puts "######Installing MOD_CREATECUSTOMERLINK_V1_SUMApp.ear#####"
+$AdminApp install /home/webspher/ears/MOD_CREATECUSTOMERLINK_V1_SUMApp.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing MOD_DELINK_REDCUSTOMER_VR1_SUM_App.ear#####"
+$AdminApp install /home/webspher/ears/MOD_DELINK_REDCUSTOMER_VR1_SUM_App.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing MOD_RED_AccountSetUp_SUMApp.ear#####"
+$AdminApp install /home/webspher/ears/MOD_RED_AccountSetUp_SUMApp.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing MOD_RED_CustomerSetup_SUMApp.ear#####"
+$AdminApp install /home/webspher/ears/MOD_RED_CustomerSetup_SUMApp.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing MOD_SubscriberMove_SUMApp.ear#####"
+$AdminApp install /home/webspher/ears/MOD_SubscriberMove_SUMApp.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing MOD_OUnitUpdate_SUMApp.ear#####"
+$AdminApp install /home/webspher/ears/MOD_OUnitUpdate_SUMApp.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing MOD_RED_DEACTIVATION_SUM_2App.ear#####"
+$AdminApp install /home/webspher/ears/MOD_RED_DEACTIVATION_SUM_2App.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing VIL_AccountModificationService_SUMApp.ear#####"
+$AdminApp install /home/webspher/ears/VIL_AccountModificationService_SUMApp.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "######Installing MOD_Account_Separation_SUMApp.ear#####"
+$AdminApp install /home/webspher/ears/MOD_Account_Separation_SUMApp.ear "-cell ndc3vqaieaidb07Cell01 -cluster BPMPT_AppCluster"
+
+
+
+puts "##############Saving and Synchronizing with master repository############################"
+$AdminConfig save
+puts "#-----------------------------------Ending Application Installation Script------------------------------------------------"

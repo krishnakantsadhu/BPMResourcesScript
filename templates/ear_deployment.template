@@ -1,0 +1,8 @@
+puts "######Installing $earname$#####"
+$AdminApp install /home/webspher/ears/$earname$ "-cell $cell$ -cluster $cluster$"
+
+$atLastLine$puts "##############Saving and Synchronizing with master repository############################"
+
+$atLastLine$$AdminConfig save
+
+$atLastLine$puts "#-----------------------------------Ending Application Installation Script------------------------------------------------"

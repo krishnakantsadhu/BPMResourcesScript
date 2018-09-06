@@ -1,0 +1,30 @@
+# ----------------------- Queue JNDI Creation $name$------------------------------------------------------
+queueName = '$jndiName$'
+mqqAttrs = '-name $name$ -jndiName $jndiName$ -queueName $queueName$ '
+mqqAttrs += '-customProperties [[MDREAD YES] [MSGBODY MQ] [MDWRITE YES]]'
+isExist = 1
+for qId in queues:
+	if AdminConfig.showAttribute( qId, 'jndiName' ) == queueName:
+		print '[Warning] :  Queue Jndi (%s) %salready Exist%s'%(queueName,YELLOW,END)
+		if isSkipIfExist == 1 :
+			echoMessage = '[Warning] : %sDeleting%s Queue Jndi (%s)'% (RED,END,queueName)
+			print echoMessage,
+			AdminTask.deleteWMQQueue(qId)
+			print '.' * (100 - len(echoMessage)),
+			print '[ %sDONE%s ]'%(GREEN,END)
+			isExist = 1
+			AdminConfig.save()
+		else:
+			print '[Warning] : %sSkipping%s Queue Jndi (%s)'% (YELLOW,END,queueName)
+			isExist = 0
+		break
+if isExist == 1:	
+	echoMessage = '[Info] : Creating Queue Jndi (%s)'% queueName
+	print echoMessage,
+	done = AdminTask.createWMQQueue( scopeID, mqqAttrs ) 
+	print '.' * (100 - len(echoMessage)),
+	if done:
+		print '[ %sDONE%s ]'%(GREEN,END)
+	else:
+		print '[ %sERROR%s ]'%(RED,END)
+AdminConfig.save()

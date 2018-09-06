@@ -1,0 +1,732 @@
+***********************************************
+* Queue creation  DOX.UPDTNAMEADDR.ESB.ECRM.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.UPDTNAMEADDR.ESB.ECRM.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing l9ChangeNameAddress') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSRV.ESB.ECRM.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSRV.ESB.ECRM.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing SubscriberServices') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CSMCUSTSR.ESB.ECRM.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.CSMCUSTSR.ESB.ECRM.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing fullCustomerSetup') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CHARGESR.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.CHARGESR.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing BL9listUninvoicedCharges') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.PERINDCTR.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.PERINDCTR.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing getRatedPerformanceIndicators') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.DOCSR.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.DOCSR.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing BL9getDocumentList') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ACCNT.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.ACCNT.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing getAccountHeader') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ACUSTOM.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.ACUSTOM.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM-Billing l9SearchChargesByInvoiceAndAccount') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.AINVOICE.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.AINVOICE.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing l9SearchInvoices') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ACREDIT.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.ACREDIT.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing l9SearchCredits') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.APYMT.ESB.ECRM.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.APYMT.ESB.ECRM.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue EntCRM-Billing L9SearchPayment') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('EntCRM.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  EntCRM.BKO
+*********************************************** 
+DEFINE QLOCAL ('EntCRM.BKO') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('EntCRM-Bill Backout queue') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH() +
+       BOQNAME('') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+

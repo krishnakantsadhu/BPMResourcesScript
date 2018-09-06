@@ -1,0 +1,1 @@
+setmqaut -m $queueManager$ -n 	$queueName$ -t q -g $user$ $permission$

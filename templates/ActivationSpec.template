@@ -1,0 +1,6 @@
+print("-----------------------------$index$. Creating ... $jndiActivationSpecName$ ---------------------")
+newact$index$=AdminTask.createWMQActivationSpec('"WebSphere MQ JMS Provider($scope$|resources.xml#builtin_mqprovider)"', '[ -name $activationSpecName$ -jndiName $jndiActivationSpecName$ -destinationJndiName $destinationJndiName$ -destinationType $destinationType$ -qmgrName $queueManagerName$ -wmqTransportType $wmqTransportType$ -qmgrHostname $queueManagerHostName$ -qmgrPortNumber $queueManagerPort$ -qmgrSvrconnChannel $queueManagerSvrconnChannel$]')
+AdminTask.modifyWMQActivationSpec(newact$index$, '-customProperties [[useJNDI $customPropertiesUseJNDI$][maxPoolDepth $customPropertiesMaxPoolDepth$]]')
+AdminTask.modifyWMQActivationSpec(newact$index$, '-stopEndpointIfDeliveryFails $stopEndpointIfDeliveryFails$')
+$atLastLine$print("----------------------------- Save ---------------------------------------------------")
+$atLastLine$AdminConfig.save()

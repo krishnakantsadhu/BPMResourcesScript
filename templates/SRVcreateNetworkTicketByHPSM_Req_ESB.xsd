@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio Developer Edition (Trial) 8.0.11.2171 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="READ_WRITE_REQ_IN_GBO">
+		<xs:annotation>
+			<xs:documentation>This is the root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MetaInfo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="1" maxOccurs="1" name="ConsumerReqInfo" type="CLSConsumerReqInfo" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="HPSMRequestType">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SRVCreateNetworkTicket" type="CLSCommonAttributes" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="CLSConsumerReqInfo">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="circleId" type="xs:string" />
+			<xs:element minOccurs="1" maxOccurs="1" name="serviceName">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="createNetworkTicketByHPSM" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element minOccurs="1" maxOccurs="1" name="channelName">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="HPSM" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element minOccurs="0" maxOccurs="unbounded" name="key" type="xs:string" />
+			<xs:element name="txtId" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CLSCommonAttributes">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="incidentID" type="xs:string" />
+			<xs:element minOccurs="0" name="category" type="xs:string" />
+			<xs:element minOccurs="0" name="openTime" type="xs:date" />
+			<xs:element minOccurs="0" name="openedBy" type="xs:string" />
+			<xs:element minOccurs="0" name="severity" type="xs:string" />
+			<xs:element minOccurs="0" name="updatedTime" type="xs:date" />
+			<xs:element minOccurs="0" name="primaryAssignmentGroup" type="xs:string" />
+			<xs:element minOccurs="0" name="configurationItem" type="xs:string" />
+			<xs:element minOccurs="0" name="location" type="xs:string" />
+			<xs:element minOccurs="0" name="contactPhone" type="xs:string" />
+			<xs:element minOccurs="0" name="contactLastName" type="xs:string" />
+			<xs:element minOccurs="0" name="contactFirstName" type="xs:string" />
+			<xs:element minOccurs="0" name="briefDescription" type="xs:string" />
+			<xs:element minOccurs="0" name="ticketOwner" type="xs:string" />
+			<xs:element minOccurs="0" name="updatedBy" type="xs:string" />
+			<xs:element minOccurs="0" name="IMticketStatus" type="xs:string" />
+			<xs:element minOccurs="0" name="subcategory" type="xs:string" />
+			<xs:element minOccurs="0" name="productType" type="xs:string" />
+			<xs:element minOccurs="0" name="problemType" type="xs:string" />
+			<xs:element minOccurs="0" name="serviceClass" type="xs:string" />
+			<xs:element minOccurs="0" name="email" type="xs:string" />
+			<xs:element minOccurs="0" name="voxID" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

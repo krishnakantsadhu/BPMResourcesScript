@@ -1,0 +1,31 @@
+# ----------------------- QCF Creation $name$------------------------------------------------------
+qcfname = '$jndiNames$'
+qcfAttrs = '-type QCF -name $name$ -jndiName $jndiNames$ -qmgrName $qmgrName$ -wmqTransportType BINDINGS_THEN_CLIENT '
+qcfAttrs += '-qmgrHostname $qmgrHostName$ -qmgrPortNumber $qmgrPort$ -qmgrSvrconnChannel SYSTEM.DEF.SVRCONN'
+isExist = 1
+deleteQcfId =''
+for qcfId in connectionFactories:
+	if AdminConfig.showAttribute( qcfId, 'jndiName' ) == qcfname:
+		print '[Waring] : Queue Connetion Factory (%s) %salready Exist%s'%(qcfname,YELLOW,END)
+		if isSkipIfExist == 1:
+			echoMessage = '[Warning] : %sDeleting%s Queue Connetion Factory'% (RED,END,qcfname)
+			print echoMessage,
+			AdminTask.deleteWMQConnectionFactory(qcfId)
+			print '.' * (100 - len(echoMessage)),
+			print '[ %sDONE%s ]'%(GREEN,END)
+			isExist = 1
+			AdminConfig.save()
+		else:
+			print '[Warning] : %sSkipping%s Queue Connetion Factory  (%s)'% (YELLOW,END,qcfname)
+			isExist = 0
+		break
+if isExist == 1:
+	echoMessage = '[Info] : Creating Queue Connetion Factory (%s)'% qcfname
+	print echoMessage,
+	done = AdminTask.createWMQConnectionFactory( scopeID, qcfAttrs )
+	print '.' * (100 - len(echoMessage)),
+	if done:
+		print '[ %sDONE%s ]'%(GREEN,END)
+	else:
+		print '[ %sERROR%s ]'%(RED,END)
+AdminConfig.save()

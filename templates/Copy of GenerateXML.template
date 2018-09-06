@@ -1,0 +1,4 @@
+		<parameters>
+			<paramterName>$DATA_DICTIONARY_MNEMONIC$</paramterName>
+			<paramterValue>$ATTRIBUTE_DESCRIPTION$</paramterValue>
+		</parameters>

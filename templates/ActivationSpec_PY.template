@@ -1,0 +1,32 @@
+# ----------------------- Activation Spec  $activationSpecName$------------------------------------------------------
+activationSpecName = '$jndiActivationSpecName$'
+asAttrs = '-name $activationSpecName$ -jndiName $jndiActivationSpecName$ -destinationJndiName $destinationJndiName$ -qmgrName $qmgrName$ '
+asAttrs += '-wmqTransportType BINDINGS_THEN_CLIENT -qmgrHostname $qmgrHostName$ -qmgrPortNumber $qmgrPort$ -qmgrSvrconnChannel $qmgrChannel$ '
+asAttrs += '-stopEndpointIfDeliveryFails false -customProperties [[useJNDI true][maxPoolDepth 3]] -destinationType javax.jms.Queue'
+isExist = 1
+for asId in activationSpecs:
+	if AdminConfig.showAttribute( asId, 'jndiName' ) == activationSpecName:
+		print '[Waring] : Activation Specification (%s) %salready Exist%s'%(activationSpecName,YELLOW,END)
+		if isSkipIfExist == 1:
+			echoMessage = '[Warning] : %sDeleting%s Activation Specification (%s)'% (RED,END,activationSpecName)
+			print echoMessage,
+			AdminTask.deleteWMQActivationSpec(asId)
+			print '.' * (100 - len(echoMessage)),
+			print '[ %sDONE%s ]'%(GREEN,END)
+			isExist = 1
+			AdminConfig.save()
+		else:
+			print '[Warning] : %sSkipping%s Activation Specification (%s)'% (YELLOW,END,activationSpecName)
+			isExist = 0
+		break
+if isExist == 1:
+	echoMessage = '[Info] : Creating Activation Specification (%s)'% activationSpecName
+	print echoMessage,
+	done = AdminTask.createWMQActivationSpec( scopeID, asAttrs ) 
+	print '.' * (100 - len(echoMessage)),
+	if done:
+		print '[ %sDONE%s ]'%(GREEN,END)
+	else:
+		print '[ %sERROR%s ]'%(RED,END)
+AdminConfig.save()
+

@@ -1,0 +1,50 @@
+
+## set jmsProvider [$AdminConfig getid "/Cell:$cellName$/Node:$nodeName$/Server:$serverName$/JMSProvider:WebSphere MQ JMS Provider/"]
+set jmsProvider [$AdminConfig getid "/$scope$/JMSProvider:WebSphere MQ JMS Provider/"]
+
+$AdminConfig required MQConnectionFactory
+
+set name [list name $name$]
+set jndi [list jndiName  $jndiNames$]
+set qmHostAttr [list host $qmHost$]
+set qmPortAttr [list port $qmPort$]
+set qm [list queueManager  $qm$ ]
+set transportType      [ list transportType CLIENT   ]
+set channel 		   [ list channel $mqchannel$]
+set authDataAlias      [ list authDataAlias none   ]
+set mappingConfigAlias [ list mappingConfigAlias DefaultPrincipalMapping ]
+set mapping            [ list mapping [list $authDataAlias $mappingConfigAlias ] ]
+set XAEnabled          [ list XAEnabled true ]
+
+set mqcfAttrs [list $name $jndi $qmHostAttr $qmPortAttr $qm $transportType  $channel  $mapping  $XAEnabled ]
+
+set template [$AdminConfig listTemplates MQQueueConnectionFactory]
+
+set MQF [ $AdminConfig createUsingTemplate MQQueueConnectionFactory $jmsProvider $mqcfAttrs $template ]
+
+$AdminConfig required J2EEResourceProperty
+set newPropSet  [ $AdminConfig create J2EEResourcePropertySet $MQF {} ]
+set propSet [$AdminConfig showAttribute $MQF propertySet]
+
+# -------------------- custom Property 1 -----------------------------------
+set name                     [ list name      "propertyName1" ]
+set required                 [ list required   true                ]
+set type                     [ list type       "java.lang.String"  ]
+set value                    [ list value      "propertyvalue1" ]
+
+set rpAttrs [list $name  $value $type $required] 
+$AdminConfig create J2EEResourceProperty $propSet $rpAttrs
+# -------------------- custom Property 2-----------------------------------
+set name                     [ list name      "propertyName2" ]
+set required                 [ list required   true                ]
+set type                     [ list type       "java.lang.String"  ]
+set value                    [ list value      "propertyvalue2" ]
+
+set rpAttrs [list $name  $value $type $required] 
+$AdminConfig create J2EEResourceProperty $propSet $rpAttrs
+
+# ==========================================================================================================================
+
+$atLastLine$puts "#-----------------------------------Saving the configuration --------------------------------------"
+$atLastLine$$AdminConfig save 
+$atLastLine$puts "#----------------------------------- End of script --------------------------------------"

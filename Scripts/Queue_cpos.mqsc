@@ -1,0 +1,3111 @@
+***********************************************
+* Queue creation  DOX.RM1UNRSMNGR.ESB.PREPROD.RPO.04
+*********************************************** 
+DEFINE QLOCAL ('DOX.RM1UNRSMNGR.ESB.PREPROD.RPO.04') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.RM1UNRSRC.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.RM1UNRSRC.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SEARCHSRV.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.SEARCHSRV.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSRV.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSRV.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.RM1UNRSMNGR.ESB.PREPROD.RPO.04
+*********************************************** 
+DEFINE QLOCAL ('DOX.RM1UNRSMNGR.ESB.PREPROD.RPO.04') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.PCNSR.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.PCNSR.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.BLARGMT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.BLARGMT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CUSTHRCHY.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.CUSTHRCHY.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ACCNT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.ACCNT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.BLARGMT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.BLARGMT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSRV.ESB.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSRV.ESB.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSRV.ESB.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSRV.ESB.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CSMCUSTSR.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.CSMCUSTSR.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CUSTHRCHY.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.CUSTHRCHY.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSRV.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSRV.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.AGRMNT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.AGRMNT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CUSTSR.ESB.PREPROD.RPO.04
+*********************************************** 
+DEFINE QLOCAL ('DOX.CUSTSR.ESB.PREPROD.RPO.04') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CUSTHRCHY.ESB.PREPROD.RPO.04
+*********************************************** 
+DEFINE QLOCAL ('DOX.CUSTHRCHY.ESB.PREPROD.RPO.04') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.AGRMNT.ESB.PREPROD.RPO.04
+*********************************************** 
+DEFINE QLOCAL ('DOX.AGRMNT.ESB.PREPROD.RPO.04') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.RM1UNRSRC.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.RM1UNRSRC.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.RM1UNRSMNGR.ESB.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.RM1UNRSMNGR.ESB.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ACCNT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.ACCNT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CSMCUSTSR.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.CSMCUSTSR.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SEARCHSRV.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.SEARCHSRV.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.AGRMNT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.AGRMNT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SEARCHSRV.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.SEARCHSRV.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CUSTHRCHY.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.CUSTHRCHY.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSRV.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSRV.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.AACCNT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.AACCNT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.PERINDCTR.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.PERINDCTR.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.AGRMNT.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.AGRMNT.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.UPDTNAMEADDR.ESB.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.UPDTNAMEADDR.ESB.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CUSTHRCHY.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.CUSTHRCHY.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.BLCUSTSR.ESB.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.BLCUSTSR.ESB.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSRV.ESB.PREPROD.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSRV.ESB.PREPROD.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ACCNT.CRACNT.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.ACCNT.CRACNT.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ACHARGE.ESB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.ACHARGE.ESB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.ADEPOSIT.ESB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.ADEPOSIT.ESB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.APYMT.CRDPPYMT.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.APYMT.CRDPPYMT.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.APYMT.L9CRPYMT.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.APYMT.L9CRPYMT.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CHARGESR.ESB.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.CHARGESR.ESB.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CSMCUSTSR.ESB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.CSMCUSTSR.ESB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.CUSTHRCHY.ESB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.CUSTHRCHY.ESB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.MEMSRV.ESB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.MEMSRV.ESB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.RM1UNRSMNGR.ESB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.RM1UNRSMNGR.ESB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSR.CNSUB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSR.CNSUB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSR.CRSUB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSR.CRSUB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSR.CSO.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSR.CSO.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSR.MVSUB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSR.MVSUB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSR.SUSUB.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSR.SUSUB.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  DOX.SUBSBRSR.RS.CPOS.PREPROD.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('DOX.SUBSBRSR.RS.CPOS.PREPROD.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('temp Q') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('DOX.CPOS.TEMP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIU1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+

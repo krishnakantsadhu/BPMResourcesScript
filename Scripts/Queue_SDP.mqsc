@@ -1,0 +1,1037 @@
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.MUM.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.MUM.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.GUJ.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.GUJ.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.ROTN.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.ROTN.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.DEL.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.DEL.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.ORS.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.ORS.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.UPE.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.UPE.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.MPC.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.MPC.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.TXTVW.DISHA.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.TXTVW.DISHA.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.BKO
+*********************************************** 
+DEFINE QLOCAL ('SDP.BKO') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('Backout queue SDP project') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.REF.MUM.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.REF.MUM.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP Refund API') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.REF.GUJ.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.REF.GUJ.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP Refund API') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.REF.ROTN.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.REF.ROTN.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP Refund API') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.REF.DEL.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.REF.DEL.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP Refund API') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.REF.ORS.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.REF.ORS.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP Refund API') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.REF.UPE.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.REF.UPE.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP Refund API') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.CRM.REF.MPC.ESB.RPO.02
+*********************************************** 
+DEFINE QLOCAL ('SDP.CRM.REF.MPC.ESB.RPO.02') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP Refund API') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+
+***********************************************
+* Queue creation  SDP.WEBCRM.TXTVW.ESB.RPO.01
+*********************************************** 
+DEFINE QLOCAL ('SDP.WEBCRM.TXTVW.ESB.RPO.01') +
+* CRDATE (2012-03-28) +
+* CRTIME (15.45.43) +
+* ALTDATE (2012-03-28) +
+* ALTTIME (15.45.43) +
+       DESCR('ResponseQueue SDP transactionviewer') +
+       PUT(ENABLED) +
+       DEFPRTY(0) +
+       DEFPSIST(NO) +
+       DEFPRESP(SYNC) +
+* CURDEPTH(1) +
+       CLWLUSEQ(QMGR) +
+       SCOPE(QMGR) +
+       GET(ENABLED) +
+       PROPCTL(COMPAT) +
+       DEFREADA(NO) +
+       MAXDEPTH(100000) +
+       MAXMSGL(4194304) +
+       SHARE +
+       DEFSOPT(SHARED) +
+       MSGDLVSQ(PRIORITY) +
+       HARDENBO +
+       USAGE(NORMAL) +
+       NOTRIGGER +
+       TRIGTYPE(FIRST) +
+       TRIGDPTH(1) +
+       TRIGMPRI(0) +
+       TRIGDATA(' ') +
+       PROCESS(' ') +
+       INITQ(' ') +
+       RETINTVL(999999999) +
+       BOTHRESH(10) +
+       BOQNAME('SDP.BKO') +
+       QDEPTHHI(80) +
+       QDEPTHLO(20) +
+       QDPMAXEV(ENABLED) +
+       QDPHIEV(DISABLED) +
+       QDPLOEV(DISABLED) +
+       QSVCINT(999999999) +
+       QSVCIEV(NONE) +
+       DISTL(NO) +
+       NPMCLASS(NORMAL) +
+       STATQ(QMGR) +
+       MONQ(QMGR) +
+       ACCTQ(QMGR) +
+       CLUSTER('CLEIS1') +
+       CLUSNL(' ') +
+       DEFBIND(NOTFIXED) +
+       CLWLRANK(0) +
+       CLWLPRTY(0) +
+       REPLACE
+
+
+
+
+
+
+

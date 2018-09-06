@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio Developer Edition 8.1.7.2743 (http://www.liquid-technologies.com) -->
+<READ_WRITE_REQ_IN_GBO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <MetaInfo>
+        <ConsumerReqInfo>
+            <circleId>string</circleId>
+            <serviceName>createNetworkTicketByHPSM</serviceName>
+            <channelName>HPSM</channelName>
+            <key>string</key>
+            <key>string</key>
+            <key>string</key>
+            <key>string</key>
+            <txtId>string</txtId>
+        </ConsumerReqInfo>
+    </MetaInfo>
+    <HPSMRequestType>
+        <SRVCreateNetworkTicket>
+            <incidentID>string</incidentID>
+            <category>string</category>
+            <openTime>1971-07-02</openTime>
+            <openedBy>string</openedBy>
+            <severity>string</severity>
+            <updatedTime>2007-02-27</updatedTime>
+            <primaryAssignmentGroup>string</primaryAssignmentGroup>
+            <configurationItem>string</configurationItem>
+            <location>string</location>
+            <contactPhone>string</contactPhone>
+            <contactLastName>string</contactLastName>
+            <contactFirstName>string</contactFirstName>
+            <briefDescription>string</briefDescription>
+            <ticketOwner>string</ticketOwner>
+            <updatedBy>string</updatedBy>
+            <IMticketStatus>string</IMticketStatus>
+            <subcategory>string</subcategory>
+            <productType>string</productType>
+            <problemType>string</problemType>
+            <serviceClass>string</serviceClass>
+            <email>string</email>
+            <voxID>string</voxID>
+        </SRVCreateNetworkTicket>
+    </HPSMRequestType>
+</READ_WRITE_REQ_IN_GBO>
